@@ -251,3 +251,19 @@ nav {
 .container {
   opacity: 1;
 }
+
+.icon-img {
+  max-width: 100px;
+  margin: auto;
+}
+
+#babies-img {
+  display: inline-block;
+  max-width: 600px;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: white;
+  border-width: 15px;
+  border-radius: 8px;
+  box-shadow:5px 5px 5px #999;
+}
