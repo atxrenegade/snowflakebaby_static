@@ -16,10 +16,11 @@ h2 {
   color: #1db1ff;
   text-align: center;
   margin-bottom: 0px;
+  font-size: 4.5rem;
 }
 
 h3 {
-  color: white;
+  color: grey;
   font-size: 2rem;
   text-align: center;
   margin-top: 5px;
@@ -215,6 +216,15 @@ Button.nav-button {
   }
 }
 
+input {
+  color: white;
+  width: 10px;
+}
+
+form {
+  width: 80%;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -255,6 +265,10 @@ nav {
 .icon-img {
   max-width: 100px;
   margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
 #babies-img, #harleigh-img {
@@ -315,6 +329,21 @@ img#harleigh-img {
   width: 80%;
 }
 
-p#my-story {
+img#snowflake-baby-definition, img#snowflake-baby-logo {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+img#snowflake-baby-logo {
+  width: 40%;
+  margin-right: 38%;
+  margin-left: 32%;
+  margin-top: -15%;
+}
+
+p#my-story, h3.snowflake-baby {
   width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
