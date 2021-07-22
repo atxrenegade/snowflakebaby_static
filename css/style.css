@@ -257,7 +257,7 @@ nav {
   margin: auto;
 }
 
-#babies-img {
+#babies-img, #harleigh-img {
   display: inline-block;
   max-width: 600px;
   opacity: 0.8;
@@ -310,3 +310,11 @@ div#access {
   margin-bottom: -10%;
 }
 
+img#harleigh-img {
+  margin-top: 10%;
+  width: 80%;
+}
+
+p#my-story {
+  width: 80%;
+}
