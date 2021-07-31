@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Prata&family=Spartan:wght@600&family=Euphoria+Script&display=swap&');
 
+#logo-container {
+  font-size: 3rem;
+  color: white;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -49,10 +54,10 @@ nav {
   display: flex;
   justify-content: space-around;
   min-height: 5vh;
-  background: rgb(194, 189, 189);
+  background: #1db1ff;
   color: white;
   width: 100%;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .nav-links {
@@ -503,11 +508,11 @@ p#annotation-2.center {
   font-size: .8rem;
 }
 
-sumome-react-wysiwyg-move-handle > div > button {
-  color:#1db1ff;
-}
-
 @media screen and (min-width: 1400px) {
+  nav .brand-logo {
+      position: relative;
+  }
+
   img#harleigh-img {
     margin-top: 7%;
   }
@@ -523,7 +528,13 @@ sumome-react-wysiwyg-move-handle > div > button {
   h5 {
     font-size: 2rem;
   }
-}  
+} 
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+  div#access {
+    margin-bottom: 20%;
+  }
+}
 
 @media screen and (max-width: 1400px){
   form {
@@ -559,9 +570,13 @@ sumome-react-wysiwyg-move-handle > div > button {
 }
 
 @media screen and (max-width: 1060px){
+  nav .nav-wrapper {
+    margin-left: -5%;
+  }
+
   div#index-banner {
     background-size: contain;
-    margin-bottom: -10%;
+    margin-bottom: 0%;
   }
 
   div.trans-card {
@@ -586,6 +601,10 @@ sumome-react-wysiwyg-move-handle > div > button {
 }
 
 @media screen and (max-width: 800px){
+  nav .nav-wrapper {
+    margin-left: -10%;
+  }
+
   div#index-banner {
     background-size: contain;
     margin-bottom: 3%;
@@ -623,11 +642,11 @@ sumome-react-wysiwyg-move-handle > div > button {
     text-align: center;
   }
 
-  img#snowflake-baby-definition, p.center.annotation  {
+  img#snowflake-baby-definition, p.center.annotation {
     display: none;
   }
 
-  img#search-profiles, img#signup-img,  img#chat-img,  img#sign-contract-gif   {
+  img#search-profiles, img#signup-img,  img#chat-img,  img#sign-contract-gif {
     width: 40%;
   }
 
@@ -667,7 +686,7 @@ sumome-react-wysiwyg-move-handle > div > button {
 
 @media screen and (max-width: 650px){
   div#index-banner {
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
 
   div.section.bg-color-pal-4.why {
@@ -682,8 +701,12 @@ sumome-react-wysiwyg-move-handle > div > button {
 }  
 
 @media screen and (max-width: 580px){
+  #logo-container {
+    font-size: 2.5rem;
+  }
+
   div#index-banner {
-    margin-bottom: 3%;
+    margin-bottom: 5%;
   }
 
   div.trans-card {
@@ -697,7 +720,7 @@ sumome-react-wysiwyg-move-handle > div > button {
   }
 
   input#sign-up.center {
-    font-size: 1.0rem;;
+    font-size: 1.0rem;
   }
 
   input[type="text"]:not(.browser-default)#sign-up {
@@ -736,10 +759,6 @@ sumome-react-wysiwyg-move-handle > div > button {
     padding-bottom: 20%;
   }
 
-  .center.lift {
-    margin-bottom: -13%;
-  }
-
   #contact-heading {
     margin-top: auto;
     margin-bottom: 1%;
@@ -757,6 +776,20 @@ sumome-react-wysiwyg-move-handle > div > button {
     margin-top: 25%;
   }
 
+  img#babychick, img#blueballoon, img#babybottle, img#babyprints {
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  img#babychick {
+    margin-top: 0;  
+  }
+
+  div#access {
+    margin-top: 5%;
+    margin-bottom: -7%; 
+  } 
+
   button.btn.btn-raised.btn-block.btn-danger {
     margin-left: 5%;
   }
@@ -772,6 +805,15 @@ sumome-react-wysiwyg-move-handle > div > button {
 }  
 
 @media screen and (max-width: 400px){
+  #logo-container {
+    font-size: 2.0rem;
+  }
+
+  div.panel-body.text-left {
+    padding-left: 0;
+    padding-top: 10%;
+  }
+
   div#index-banner {
     margin-bottom: -20%;
   } 
@@ -787,6 +829,12 @@ sumome-react-wysiwyg-move-handle > div > button {
   div.section.bg-color-pal-4.why {
     margin-bottom: -35%;
   }
+
+  img#babyprints {
+    scale: 200%;
+    margin-bottom: 15%;
+    margin-left: 15%;
+    margin-top: 15%;
 }
 
 @media screen and (max-width: 350px){
