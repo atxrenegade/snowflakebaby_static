@@ -213,6 +213,10 @@ input[type="submit"] {
   letter-spacing: -0.2rem;
 }
 
+#sub-title {
+  font-size: 2.5rem;
+}
+
 .banner {
   width: 100%;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -499,6 +503,10 @@ p#annotation-2.center {
   font-size: .8rem;
 }
 
+sumome-react-wysiwyg-move-handle > div > button {
+  color:#1db1ff;
+}
+
 @media screen and (min-width: 1400px) {
   img#harleigh-img {
     margin-top: 7%;
@@ -540,6 +548,10 @@ p#annotation-2.center {
   }  
 }
 
+@media screen and (max-width: 1200px){
+  
+}
+
 @media screen and (max-width: 1160px){
   p.center.annotation {
   font-size: .75rem;
@@ -547,12 +559,18 @@ p#annotation-2.center {
 }
 
 @media screen and (max-width: 1060px){
-   img#search-profiles, img#signup-img,  img#chat-img,  img#sign-contract-gif   {
-    max-width: 100%;
+  div#index-banner {
+    background-size: contain;
+    margin-bottom: -10%;
   }
 
   div.trans-card {
+    margin-top: 50%;
     width: 100%;
+  }
+
+   img#search-profiles, img#signup-img,  img#chat-img,  img#sign-contract-gif   {
+    max-width: 100%;
   }
 
   div#header-card {
@@ -568,6 +586,19 @@ p#annotation-2.center {
 }
 
 @media screen and (max-width: 800px){
+  div#index-banner {
+    background-size: contain;
+    margin-bottom: 3%;
+  }
+
+  div.trans-card {
+    margin-top: 40%;
+  }
+
+  #sub-title {
+    font-size: 2.0rem;
+  }
+
   .icon-block{
     padding-bottom: 10%;
   }
@@ -635,6 +666,10 @@ p#annotation-2.center {
 }
 
 @media screen and (max-width: 650px){
+  div#index-banner {
+    margin-bottom: 5%;
+  }
+
   div.section.bg-color-pal-4.why {
     margin-bottom: -5%;
   }
@@ -646,7 +681,21 @@ p#annotation-2.center {
   }
 }  
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 580px){
+  div#index-banner {
+    margin-bottom: 3%;
+  }
+
+  div.trans-card {
+    margin-top: 30%;
+  }
+
+  #page-title {
+    font-size: 4.5rem;
+    margin-bottom: 0px;
+    margin-top: 2.0rem;
+  }
+
   input#sign-up.center {
     font-size: 1.0rem;;
   }
@@ -707,10 +756,6 @@ p#annotation-2.center {
   #babies-img {
     margin-top: 25%;
   }
-  
-  div.section.bg-color-pal-4.why {
-    margin-bottom: -10%;
-  }
 
   button.btn.btn-raised.btn-block.btn-danger {
     margin-left: 5%;
@@ -720,15 +765,35 @@ p#annotation-2.center {
     padding-left: 8%;
     padding-top: 10%;
   }
+
+  #sub-title {
+    font-size: 2.0rem;
+  }
 }  
 
 @media screen and (max-width: 400px){
+  div#index-banner {
+    margin-bottom: -20%;
+  } 
+
+  div.trans-card {
+    margin-top: 27%;
+  }
+
+ #page-title {
+    font-size: 3.5rem;
+  }
+
   div.section.bg-color-pal-4.why {
     margin-bottom: -35%;
   }
 }
 
 @media screen and (max-width: 350px){
+  div#index-banner {
+      margin-bottom: -40%;
+  }
+
   input#sign-up.center {
     font-size: .9rem;;
   }
