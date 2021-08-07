@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Prata&family=Spartan:wght@600&family=Euphoria+Script&display=swap&');
 
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
 #logo-container {
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
+  font-family: Euphoria Script;
 }
 
 .icon-block {
@@ -53,11 +58,18 @@ nav {
   z-index: 1000;
   display: flex;
   justify-content: space-around;
-  min-height: 5vh;
+  min-height: 15vh;
   background: #1db1ff;
   color: white;
   width: 100%;
   font-weight: 500;
+  padding-bottom: 10%;
+  padding-top: 2%;
+}
+
+nav ul a {
+  color: #c4e7fa;
+  font-size: 1.25rem;
 }
 
 .nav-links {
@@ -283,13 +295,7 @@ svg {
 }
 
 a.top {
-  top:-100px;
-  height: 0;
-  width:0;
-}
-
-a#what {
-  top: -100px;
+  top: -250px;
 }
 
 .container {
@@ -318,9 +324,9 @@ a#what {
 }
 
 #harleigh-img {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }    
 
 img.benefit-img {
@@ -508,6 +514,10 @@ p#annotation-2.center {
   font-size: .8rem;
 }
 
+div#nav-background {
+  background-color: #1db1ff;
+}
+
 @media screen and (min-width: 1400px) {
   nav .brand-logo {
       position: relative;
@@ -559,17 +569,21 @@ p#annotation-2.center {
   }  
 }
 
-@media screen and (max-width: 1200px){
-  
+@media screen and (max-width: 1350px){
+  nav {
+    padding-bottom: 12%;
+  }
 }
 
 @media screen and (max-width: 1160px){
   p.center.annotation {
   font-size: .75rem;
   }
-}
 
-@media screen and (max-width: 1060px){
+  nav {
+    padding-bottom: 14%;
+  }
+
   nav .nav-wrapper {
     margin-left: -5%;
   }
@@ -598,6 +612,30 @@ p#annotation-2.center {
     margin-right: 5%;
     margin-left: 5%;
   }
+}
+
+@media screen and (max-width: 1050px){
+  html {
+    scroll-padding-top: 120px; /* height of sticky header */
+  }
+}
+
+@media screen and (max-width: 989px){
+  html {
+    scroll-padding-top: 50px; /* height of sticky header */
+  }
+
+  nav {
+    min-height: 5vh;
+    padding-bottom: 10%;
+    padding-top: 3%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  nav {
+    padding-bottom: 12%;
+  }  
 }
 
 @media screen and (max-width: 800px){
@@ -685,6 +723,10 @@ p#annotation-2.center {
 }
 
 @media screen and (max-width: 650px){
+ nav {
+    padding-bottom: 14%;
+  } 
+
   div#index-banner {
     margin-bottom: 7%;
   }
@@ -805,6 +847,11 @@ p#annotation-2.center {
 }  
 
 @media screen and (max-width: 400px){
+  nav {
+    padding-top: 2%;
+    padding-bottom: 16%;
+  } 
+
   #logo-container {
     font-size: 2.0rem;
   }
@@ -862,4 +909,3 @@ p#annotation-2.center {
     font-size: .9rem;
   }
 }
-
