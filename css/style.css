@@ -743,6 +743,10 @@ div#nav-background {
 }  
 
 @media screen and (max-width: 580px){
+  html {
+    scroll-padding-top: 30px; /* height of sticky header */
+  }
+
   #logo-container {
     font-size: 2.5rem;
   }
