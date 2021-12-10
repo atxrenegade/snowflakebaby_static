@@ -188,6 +188,46 @@ input[type="email"]:not(.browser-default),input[type="text"]:not(.browser-defaul
   padding: 3px 12px;
 }
 
+div.mc-field-group > label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; 
+}
+
+div.mc-field-group > input {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; 
+}
+
+div#mc_embed_signup {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+form#mc-embedded-subscribe-form.validate {
+  margin: auto 10% auto 10%;
+}
+
+input#mce-FNAME, input#mce-EMAIL {
+  padding-top: 0%;
+  padding-bottom:0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#mc_embed_signup {
+  background: none;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 500px;
+}
+
+#mc_embed_signup.mc-field-group input {
+  padding: 0px;
+}
+
 button[type="button"] {
   display: block;
   appearance: none;
@@ -474,8 +514,15 @@ p#my-story, h3.snowflake-baby {
 
 div#index-banner {
   background-image: url('../images/baby-bg-1.jpg');
-  background-size: cover;
+  background-size: 160%;
   background-repeat: no-repeat;
+  -webkit-background-size: 160%;
+  -moz-background-size: 160%;
+  -o-background-size: 160%;
+  background-position: top -6em right -32rem;
+  padding-bottom: 0px;
+  margin-bottom: -2rem;
+
 }
 
 div#how-it-works-section, div#contact-section {
@@ -518,6 +565,18 @@ div#nav-background {
   background-color: #1db1ff;
 }
 
+[type="radio"]:not(:checked) {
+  position: absolute;
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+[type="radio"]:checked {
+  position: absolute;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media screen and (min-width: 1400px) {
   nav .brand-logo {
       position: relative;
@@ -525,6 +584,17 @@ div#nav-background {
 
   img#harleigh-img {
     margin-top: 7%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  div#index-banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-position: top right;
   }
 }
 
@@ -667,7 +737,7 @@ div#nav-background {
   }
 
   div.panel-body.text-left {
-    padding-left: 17%;
+    padding-left: 0%;
     padding-top: 10%;
   }
 
@@ -729,6 +799,14 @@ div#nav-background {
 
   div#index-banner {
     margin-bottom: 7%;
+  }
+
+  #mc_embed_signup {
+    width: 300px;
+  }
+
+  .container {
+    width: 100%;
   }
 
   div.section.bg-color-pal-4.why {
